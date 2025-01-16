@@ -58,6 +58,51 @@
             float: left;
             display: flex;
         }
+        style
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+        .contact, .education, .experience, .skills {
+            margin-bottom: 20px;
+        }
+        .contact p, .education p, .experience p, .skills p {
+            margin: 5px 0;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 8px;
+        }
+    </style>
+    </style>
     </style>
 </head>
 <body>
@@ -73,35 +118,40 @@
     </nav>
     <main>
         <h1>My Resume</h1>
-        <pre class="pre">CAMTAN, CARL PATRICK H.
-
-            Home Address:   141 Malagasang 2-E Imus City, Cavite
-            Phone No:  09939644886
-            Email Address: CarlCamtan@gmail.com</p>
-        <pre class="pre">Personal Information
-            Birthdate: June 5, 2006
-            Religion: Catholic
-            Place of Birth: Imus Cavite</p>
-        <pre class="pre">Skills
-            • Time Management
-            • Adaptilabilty
-            • Fast Learner
-            • Communicating</p>
-        <pre class="pre">Education Background
-            PRIMARY
-            2012-2016                      Malagasang 3 Elementary School
-            
-            SECONDARY
-            2016-2022                      Kin Yang Academy INC. Dasmariñas Cavite
-            
-            SHS SECONDARY
-            2022-2024                      Kin Yang Academy INC. Dasmariñas Cavite
-                         
-            TERTIARY
-            2024 Present                 Cavite State University - Imus Campus</p>
-    </main> 
-    <footer>
-        <p>&copy; 2025 My Website | All rights reserved.</p>
-    </footer>
+        <div class="container">
+            <h1>Carl Patrick H. Camtan</h1>
+            <div class="contact">
+                <p><strong>Email:</strong> carlcamtan@gmail.com</p>
+                <p><strong>Phone:</strong> 0993 964 4886</p>
+            </div>
+    
+            <div class="education">
+                <div class="section-title">Education</div>
+                <p><strong>Cavite State University Imus Campus</strong> — Bachelor's in Computer Science</p>
+                <p>2024 Present</p>
+            </div>
+    
+            <div class="experience">
+                <div class="section-title">Work Experience</div>
+                <p><strong>Computer Technical</strong></p>
+                <p>2020-2021</p>
+                <ul>
+                    <li>Computer Technical at my father's shop</li>
+                    <li>No collaborations yet</li>
+                    <li>Improved the performance of the shop.</li>
+                </ul>
+            </div>
+    
+            <div class="skills">
+                <div class="section-title">Skills</div>
+                <ul>
+                    <li>Python</li>
+                    <li>Microsoft Word</li>
+                    <li>HTML & CSS</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft PowerPoint</li>
+                </ul>
+            </div>
+        </div>
 </body>
 </html>

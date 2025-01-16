@@ -45,7 +45,7 @@
             width: 100%;
         }
         body {
-            background-image: url('https://media.istockphoto.com/id/1297060179/vector/light-teal-defocused-blurred-motion-abstract-background.jpg?s=612x612&w=0&k=20&c=f9791_AIbiqrDxI2KajFPSdIOzjUOzxOJpfkNbIeKpA=');
+            background-image: url('bgimage.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -59,6 +59,68 @@
             float: left;
             display: flex;
         }
+        style
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .family-tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .person {
+            display: block;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .person span {
+            display: block;
+            font-size: 14px;
+        }
+
+        .line {
+            position: relative;
+            width: 20px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background-color: #2980b9;
+        }
+
+        .generation .line {
+            display: flex;
+            justify-content: center;
+        }
+
+        .generation .line:empty {
+            display: none;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -74,13 +136,36 @@
     </nav>
     <main>
         <h1>About My Family</h1>
-        <p class="pre">My Mother's name is Maricris Hael and My Father's name is John Carlo B. Camtan. I have two brother named Christian Hael 20 years old and my little brother whose 17 years old.</p>
-        <pre class="pre">They are separated and living well.</p>
-        <pre class="pre">My Dad works as Gunsmith and My mother's is OFW.</p>
-    </main> 
-    <footer>
-        <p>&copy; 2025 My Website | All rights reserved.</p>
-    </footer>
+        <div class="family-tree">
+            <!-- Grandparents Generation -->
+            <div class="generation">
+                <div class="person">
+                    Grandfather<br><span>Chito Camtan</span>
+                </div>
+                <div class="line"></div>
+                <div class="person">
+                    Grandmother<br><span>Rizalina Camtan</span>
+                </div>
+            </div>
     
+            <!-- Parents Generation -->
+            <div class="generation">
+                <div class="person">
+                    Father<br><span>John Carlo Camtan</span>
+                </div>
+                <div class="line"></div>
+                <div class="person">
+                    Mother<br><span>Maricris Hael</span>
+                </div>
+            </div>
+    
+            <!-- Your Generation -->
+            <div class="generation">
+                <div class="person">
+                    You<br><span>Carl Patrick Camtan</span>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

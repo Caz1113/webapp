@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Memories</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0px;
+            padding: 0;
             box-sizing: border-box;
+            
         }
         header {
             background-color: #ac65a6;
             color: white;
             padding: 1rem;
             text-align: center;
-            margin-top: 0;
         }
         nav {
             display: flex;
@@ -24,12 +24,12 @@
             background: #ac65a6;
         }
         nav a {
-            color: rgb(255, 255, 255);
+            color: white;
             padding: 1rem;
             text-decoration: none;
         }
         nav a:hover {
-            background-color: #ac65a6;
+            background-color: #575757;
         }
         main {
             padding: 2rem;
@@ -58,53 +58,87 @@
             padding: 0px;
             float: left;
             display: flex;
+        }
+        style
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .family-tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .generation {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .person {
+            display: block;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .person span {
+            display: block;
+            font-size: 14px;
+        }
+
+        .line {
+            position: relative;
+            width: 20px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background-color: #2980b9;
+        }
+
+        .generation .line {
+            display: flex;
             justify-content: center;
         }
-        .paragraphs {
-            text-align: left;
-            margin: 50px;
-            padding: 50;
+
+        .generation .line:empty {
+            display: none;
         }
-        .bobo {
-            margin: 60px;
-            padding: 60px;
-            text-align: left;
-        }
+    </style>
     </style>
 </head>
 <body>
     <header>
-        <h1>HAPPY VALENTINE'S DAY!</h1>
+        <h1>Memories With You!</h1>
     </header>
     <nav>
-        <a href="index.html">My Love</a>
+        <a href="index.html">Home</a>
         <a href="Memories.html">Memories</a>
         <a href="Appreciation.html">Appreciation</a>
     </nav>
     <main>
-        <h2><strong>Will you be my valentine? 💌</strong></h2>
-            <p class="paragraphs"><strong> </strong></p>
-        </section>
-        <section id="about" class="content">
-            <h2></h2>
-            <p class="bobo"><b></b></p>
-        </section>
-        <section id="contact" class="content">
-            <h2></h2>
-            <p><b></b>
-                <section>
- 
- 
- 
-                
-                </section>
-            </p>
-        </section>
-        <a href="" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-        <p><strong></strong></p>
-        <div class="image-container"></div>
-        <img src="Mybaby.jpg"></div> 
-        
+        <video controls autoplay loop>
+            <source src="Memories.mp4" type="video/mp4">
+        </video>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
